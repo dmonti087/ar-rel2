@@ -1,0 +1,10 @@
+<p>student id: <%= @s.id %></p>
+<p>name: <%= @s.name %></p>
+<p>email: <%= @s.email %></p>
+<p>classes:</p>
+<ul>
+    <% c_s = @s.college_classes %>
+    <% c_s.each do |x| %>
+    <li><%= x.name %></li>
+    <% end %> 
+</ul>

@@ -1,0 +1,9 @@
+<p>college class: <%= @cc.name %></p>
+<p>instructor: <%= @cc.instructor %></p>
+<p>students:</p>
+<ul>
+    <% s = @cc.students %>
+    <% s.each do |x| %>
+    <li><%= x.name %></li>
+    <% end %> 
+</ul>

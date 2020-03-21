@@ -1,0 +1,4 @@
+<h2>College Classes</h2>
+<% @collegeclasses.each do |x| %>
+<p><%= x.name %> <a href="/collegeclass_search/<%= x.id %>">View</a></p>
+<% end %>
